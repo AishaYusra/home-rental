@@ -13,8 +13,8 @@ dragzone.addEventListener('drop', (e) => {
         if (file.type.match('image/jpeg') || file.type.match('image/jpg') || file.type.match('image/png')) {
             const img = document.createElement('img');
             img.setAttribute('draggable', 'false');
-            img.style.maxWidth = '12rem';
-            img.style.maxHeight = '6rem';
+            // img.style.maxWidth = '12rem';
+            // img.style.maxHeight = '6rem';
 
             const reader = new FileReader();
             reader.onload = (event) => {
@@ -34,7 +34,10 @@ dragzone.addEventListener('drop', (e) => {
 const price = document.querySelector('.price');
 const address = document.querySelector('.address');
 const btn = document.querySelector('.btn');
-const city = document.querySelector('#room'); // Get the select element
+const city = document.querySelector('#room');
+// const Div = document.querySelector('.cardinfo')
+// Get the select element
+// const unit = document.querySelector('.unit');
 
 const newDiv = document.createElement('div');
 newDiv.className = 'cards';
@@ -43,23 +46,28 @@ btn.addEventListener('click', (e) => {
 
     // Create a new div for each card
 
+    const div = document.createElement('div')
+    div.className = "cardinfo"
 
     const h6 = document.createElement('h4');
     const h6text = document.createTextNode(address.value);
     h6.appendChild(h6text);
-    newDiv.appendChild(h6);
+    div.appendChild(h6);
 
     // Get the value of the selected option from the dropdown
     const selectedOption = document.createElement('p');
     const selectedOptionText = document.createTextNode(city.value);
     selectedOption.appendChild(selectedOptionText);
-    newDiv.appendChild(selectedOption);
+    div.appendChild(selectedOption);
+
+    // const
 
     const p = document.createElement('h6');
-    const pText = document.createTextNode(`$ ${price.value}/month`);
+    const pText = document.createTextNode(`$${price.value}/month`);
     p.appendChild(pText);
-    newDiv.appendChild(p);
+    div.appendChild(p);
 
+    newDiv.appendChild(div)
     console.log(newDiv);
 
     // Append the newDiv to a target div with the class 'property' (modify this to match your target div's class)

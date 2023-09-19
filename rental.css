@@ -224,7 +224,6 @@ nav li {
 
 .homeshead button:hover {
     background-color: #f7754d;
-
 }
 
 .homes h1 {
@@ -247,8 +246,6 @@ nav li {
     width: 100%;
     height: 280px;
     margin-bottom: 0;
-    /* border: 1px solid #18191F;
-    border-radius: 8px; */
 }
 
 .property {
@@ -381,15 +378,12 @@ nav li {
 
 .pictures {
     display: grid;
-    /* position: relative; */
     left: 60px;
     grid-template-columns: 200px 200px;
-    /* column-gap: none;
-    row-gap: none; */
     top: 120px;
     width: 60%;
-    margin-top: 0;
     gap: 50px;
+    margin-left: 50px;
 }
 
 .pics {
@@ -424,7 +418,7 @@ nav li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .sec3text h1 {
@@ -473,15 +467,11 @@ nav li {
     margin-top: 40px;
 }
 
-/* .theform {
-    width: 970px;
-    height: 1130px;
-    background-color: rgb(243, 62, 62);
-    box-shadow: 0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714);
+.theform {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-} */
-
+}
 
 .theform h1 {
     font-family: Inter;
@@ -497,9 +487,7 @@ form {
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
-    margin-left: 120px;
     width: 670px;
-    height: 800px;
     border-radius: 8px;
     background-color: white;
     box-shadow: 0px 4px 63px 0px #00000026;
@@ -526,15 +514,6 @@ form select {
     margin-bottom: 20px;
 }
 
-.formm {
-    display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
-}
-
-.formm ul {
-    list-style-type: none;
-}
 
 form input::placeholder {
     font-family: Inter;
@@ -553,8 +532,13 @@ form label {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.20000000298023224px;
-    /* text-align: left; */
+    text-align: left;
     color: #252B42;
+}
+
+.mainform {
+    display: flex;
+    gap: 30px;
 }
 
 form button {
@@ -569,16 +553,12 @@ form button {
     font-weight: 500;
     line-height: 25px;
     border-radius: 8px;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 
 form button:hover {
     background-color: #f7754d;
-}
-
-.desc ul {
-    list-style-type: none;
-    margin-left: -140px;
 }
 
 .desc label {
@@ -597,15 +577,15 @@ textarea {
     resize: none;
     height: 100px;
     width: 500px;
-    margin-left: -6px;
+    /* margin-left: -6px; */
     background-color: #E6E6E6;
+    margin-bottom: 20px;
 }
 
 .dragphoto {
     border: 1px dashed #F4511E;
     border-radius: 8px;
-    /* width: 700px; */
-    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 .dragphoto p {
@@ -641,8 +621,9 @@ textarea {
 }
 
 #propvid {
-    width: 500px;
+    /* width: 100%; */
     height: 430px;
+    margin-right: 0;
 }
 
 #quote {
