@@ -35,8 +35,6 @@ app.get('/getProperty', async (req, res) => {
 
 })
 
-
-
 app.post("/postProperty", async (req, res) => {
     const { name, price, city, address, unitnumber, roomtype } = req.body;
     try {
