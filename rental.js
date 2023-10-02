@@ -45,7 +45,6 @@ btn.addEventListener('click', (e) => {
     e.preventDefault();
 
     // Create a new div for each card
-
     const div = document.createElement('div')
     div.className = "cardinfo"
 
@@ -61,7 +60,6 @@ btn.addEventListener('click', (e) => {
     div.appendChild(selectedOption);
 
     // const
-
     const p = document.createElement('h6');
     const pText = document.createTextNode(`$${price.value}/month`);
     p.appendChild(pText);
